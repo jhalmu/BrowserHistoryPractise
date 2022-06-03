@@ -12,6 +12,9 @@ GOAL: Visualise your browser data as you browse. Add categories for domains so y
 - Finded way to manipulate browser_history's interesting data-stream. I wanted to cut urls to have only domains. Cleaned date-data 'cos I could. Succeed with domain-thing after hard "my way" trying. Tuples and strings, fun.
 - This uses Firefox as The Browser as it is anyway. But using another browsers ok too, see footnote *) 
 
+3.6.2022
+- Started to add FastApi, but not yet. Saved that for another project. New idea is start new cloud postgres database so my I can show world wide what I am browsing. Thinking [hasura](hasura.io) and of course that that...
+
 
 ## TODO
 - [X] Data-stream
@@ -29,3 +32,9 @@ GOAL: Visualise your browser data as you browse. Add categories for domains so y
 
 
 *) This project is started based on [samyak](https://pypi.org/user/samyak/)'s + contributors in [Browser History](https://pypi.org/project/browser-history/)
+
+## REQUIREMENTS
+# Because freeze and conda makes hard requirements files nowdays when there is M1 and other machines
+
+- browser-history
+- pandas   
