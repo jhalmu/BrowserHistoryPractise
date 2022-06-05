@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Browser history</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js" integrity="sha256-cHVO4dqZfamRhWD7s4iXyaXWVK10odD+qp4xidFzqTI=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Browser history</h1>
+
+<ul>
+{% for item in data%}
+    <li>{{item[0]}} {{item[1]}}</li>
+{% endfor %}
+</ul>
+
+</body>
+</html>

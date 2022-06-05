@@ -1,2 +1,4 @@
 browser-history
 pandas
+uvicorn
+fastapi

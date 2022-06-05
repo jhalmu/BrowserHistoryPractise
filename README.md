@@ -15,6 +15,9 @@ GOAL: Visualise your browser data as you browse. Add categories for domains so y
 3.6.2022
 - Started to add FastApi, but not yet. Saved that for another project. New idea is start new cloud postgres database so my I can show world wide what I am browsing. Thinking [hasura](hasura.io) and of course that that...
 
+6.6.2022
+- Added FastApi and figurded out finally (stackover..). Still missing things. But there is now one for chart.js via jinja2 and one as an api. Information is kind of boring, so it vill take much that I figure (oh, pun) out what is best way to show this data: time and www.address.
+
 
 ## TODO
 - [X] Data-stream

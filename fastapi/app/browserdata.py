@@ -1,6 +1,9 @@
 
 from datetime import datetime
 import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
 # there is also urllib3 so load that is problems
 from urllib.parse import urlparse
 # pypi browser_history
@@ -19,8 +22,19 @@ df = pd.DataFrame(his)
 # Giving name for colums 
 df = df.set_axis(['aika','osoite'], axis='columns')
 # If wanted we can shorten original datetime presentation
-df['aika'] = pd.to_datetime(df['aika']).dt.strftime('%Y-%m-%d %H:%M:%S')
+df['aika'] = pd.to_datetime(df['aika']).dt.strftime('%Y-%M-%d %H:%m:%S')
 # the magic of parsing hostname from long urls
 df['osoite']= [urlparse(h[1]).hostname for h in his]
 # Time to show enddata and continue 
-print(df)
+#data = ()#
+df = df.head(1001)
+aika = ""
+osoite = ""
+aika = [a for a in df['aika']]
+osoite = [o for o in df['osoite']]
+df = list(zip(aika, osoite), strict=True)
+
+df
+aika
+osoite
+#print(df)
