@@ -16,7 +16,7 @@ GOAL: Visualise your browser data as you browse. Add categories for domains so y
 - Started to add FastApi, but not yet. Saved that for another project. New idea is start new cloud postgres database so my I can show world wide what I am browsing. Thinking [hasura](hasura.io) and of course that that...
 
 6.6.2022
-- Added FastApi and figurded out finally (stackover..). Still missing things. But there is now one for chart.js via jinja2 and one as an api. Information is kind of boring, so it vill take much that I figure (oh, pun) out what is best way to show this data: time and www.address.
+- Added FastApi and figurded out finally (stackover..). Still missing things. But there is now one for chart.js via jinja2 and one as an api. Information is kind of boring, so it vill take much that I figure (oh, pun) out what is best way to show this data: time and www address.
 
 
 ## TODO
@@ -24,9 +24,11 @@ GOAL: Visualise your browser data as you browse. Add categories for domains so y
 - [ ] Basic pivoting strategies
 - [ ] Visualisation 1 aka basic plotting
 - [ ] Server based functionalities. Have link to show your history in browser
+- [ ] Postgress database in docker 
+- [ ] and Postgess in the cloud 
 - [ ] Dockerize
 - [ ] Starting The End Product(s) project
-- [ ] API
+- [X] API
 - [ ] Mobile App
 - [ ] Desktop App
 - [ ] Have trip to Space with Elon
@@ -40,4 +42,6 @@ GOAL: Visualise your browser data as you browse. Add categories for domains so y
 # Because freeze and conda makes hard requirements files nowdays when there is M1 and other machines
 
 - browser-history
-- pandas   
+- pandas
+- uvicorn
+- fastapi   
