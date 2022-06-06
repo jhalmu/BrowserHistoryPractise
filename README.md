@@ -26,6 +26,7 @@ GOAL: Visualise your browser data as you browse. Add categories for domains so y
 - [ ] Server based functionalities. Have link to show your history in browser
 - [ ] Postgress database in docker 
 - [ ] and Postgess in the cloud 
+- [ ] Helper db-tables for masking www adresses aka making categories 
 - [ ] Dockerize
 - [ ] Starting The End Product(s) project
 - [X] API
