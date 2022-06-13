@@ -1,4 +1,10 @@
 body, html {
-    background-color: rgb(202, 79, 200);
+    background-color: rgb(10, 10, 10);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: antiquewhite;
+    width:80%;
+    height:100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin:0 auto;
 } 

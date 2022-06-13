@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(247,244,244);
+    background-color: rgb(10, 10, 10);
+}
+
+.title {
+    text-align: center;
+    color: antiquewhite;
+    margin: 70px 70px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 60%;
+    justify-content: space-evenly;
+}

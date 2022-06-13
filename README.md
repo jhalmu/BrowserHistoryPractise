@@ -5,7 +5,7 @@ Started: 27.5.2022
 
 I could start this from scratch fetching information on browser but not now. Next parts (not included yet) are more interesting. Working with Data analysis is the thing.  
 
-GOAL: Visualise your browser data as you browse. Add categories for domains so yo do not have to show actual domain if there going to be implementations for public use. Charts and Pies, and if possible, some Frenc/Freedom fries. Main goal: Know where you have been...  
+GOAL: Visualise your browser data as you browse. Add categories for domains so yo do not have to show actual domain if there going to be implementations for public use. Charts and Pies, and if possible, some French/Freedom fries. Main goal: Know where you have been...  
 
 ### Journal
 28.5.2022
@@ -17,6 +17,9 @@ GOAL: Visualise your browser data as you browse. Add categories for domains so y
 
 6.6.2022
 - Added FastApi and figurded out finally (stackover..). Still missing things. But there is now one for chart.js via jinja2 and one as an api. Information is kind of boring, so it vill take much that I figure (oh, pun) out what is best way to show this data: time and www address.
+
+14.6.2022
+- I ditch this project for now. This was good practice for more interesting data. If you want't to start this up, main.py is the file. Make first csv-file from your own Firefox browser-history. Instructions in browserdata.py. Astually you might not need csv, because df includes same data than you export. Haven't tried. 
 
 
 ## TODO
@@ -45,4 +48,5 @@ GOAL: Visualise your browser data as you browse. Add categories for domains so y
 - browser-history
 - pandas
 - uvicorn
-- fastapi   
+- fastapi 
+- dash w/ extras  
