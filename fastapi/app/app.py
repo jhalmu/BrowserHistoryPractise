@@ -10,7 +10,8 @@ from fastapi.middleware.wsgi import WSGIMiddleware
 from app.dashboard import dapp
 
 # The data
-from app.browserdata import df, aika, osoite
+from app.browserdata import df
+df = df[:101]
 
 BASE_PATH = Path(__file__).resolve().parent
 TEMPLATES = Jinja2Templates(directory=str(BASE_PATH / "templates"))
@@ -38,9 +39,10 @@ def root(request: Request) -> dict:
     """
     Root GET
     """
-    return TEMPLATES.TemplateResponse("index.html",
-    {"request": request, "data": df, "aika": aika, "osoite": osoite}
-    )
+    return TEMPLATES.TemplateResponse(
+        "index.html",
+        {"request": request, "data": df[:101],"tohtml": df.to_html()}
+        )
 
 
 

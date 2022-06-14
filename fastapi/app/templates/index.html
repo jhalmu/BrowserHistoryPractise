@@ -3,7 +3,7 @@
     <title>Browser history</title>
     <link rel="icon" type="image/x-icon" href="https://www.python.org/static/favicon.ico">
     <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
-
+    <!-- Ei päivity noi staticit niin piti laittaa tuohon css  -->
     <style>
         body, html {
             border: 0;
@@ -12,13 +12,27 @@
         #content {
             background-color: #111;
             margin:auto;
-            padding: 20rem;
+            padding: 15rem;
             color: antiquewhite;
         }
         a:link,a:visited {
             color: antiquewhite;
             font-weight:bolder;
         }
+        table,th,td,tr,thead,tbody {
+            border: 0;
+            border-bottom: 1px dotted grey;
+            text-align:left;
+            font-weight: normal;
+        }
+        thead,tbody {
+            white-space: nowrap;
+        }
+        table {
+            table-layout: auto; 
+            width: 100%;
+        }
+  
     </style>
 
 </head>
@@ -30,7 +44,11 @@
         <p><a href="/dash">Dash page</a> Dash by Plotly is python written framework targeted mostly for <strong>scientific</strong> visualisations of data. 
             I'm still looking for ways to visualise browser data better. No much Pies from this data. Or cigar.</p>   
         <p><a href="/api">API page (100 first entries for free)</a> APIs are golden because it helps to separante backend from frontend. 
-            There is also many videos in Youtube how to monetize your own API.</p>  
+            There is also many videos in Youtube how to monetize your own API.</p>
+             <div>
+        {{tohtml | safe}}
+             </div>
     </div>
+ 
 </body>
 </html>

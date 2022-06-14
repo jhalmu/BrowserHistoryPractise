@@ -21,6 +21,9 @@ GOAL: Visualise your browser data as you browse. Add categories for domains so y
 14.6.2022
 - I ditch this project for now. This was good practice for more interesting data. If you want't to start this up, main.py is the file. Make first csv-file from your own Firefox browser-history. Instructions in browserdata.py. Astually you might not need csv, because df includes same data than you export. Haven't tried. 
 
+14.4.2022
+- Here I am, same days evning. Can't stop before I learn this. I trimmed time-part so no it shows time to day. Maeby now some pivot things working better.  
+
 
 ## TODO
 - [X] Data-stream
