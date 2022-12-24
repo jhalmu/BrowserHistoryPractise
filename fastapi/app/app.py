@@ -1,16 +1,20 @@
 # Importing FastApi class
-from fastapi import FastAPI, APIRouter, Request
-from fastapi.responses import HTMLResponse
-from fastapi.staticfiles import StaticFiles
-from fastapi.templating import Jinja2Templates
 from pathlib import Path
-from fastapi.middleware.wsgi import WSGIMiddleware
-#import dash
-
-from app.dashboard import dapp
 
 # The data
 from app.browserdata import df
+from app.dashboard import dapp
+
+import fastapi
+from fastapi import APIRouter, FastAPI, Request
+from fastapi.middleware.wsgi import WSGIMiddleware
+from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
+
+# import dash
+
+
 df = df[:101]
 
 BASE_PATH = Path(__file__).resolve().parent
@@ -20,7 +24,7 @@ TEMPLATES = Jinja2Templates(directory=str(BASE_PATH / "templates"))
 app = FastAPI()
 
 app.mount("/dash", WSGIMiddleware(dapp.server))
-#api_router = APIRouter()
+# api_router = APIRouter()
 
 app.mount("/static", StaticFiles(directory=str(BASE_PATH / "static")), name="static")
 templates = Jinja2Templates(directory="../templates", auto_reload=True)
@@ -33,6 +37,7 @@ def index() -> dict:
     """
     return {"data": df[:101]}
 
+
 # Default route
 @app.get("/", status_code=200)
 def root(request: Request) -> dict:
@@ -41,9 +46,8 @@ def root(request: Request) -> dict:
     """
     return TEMPLATES.TemplateResponse(
         "index.html",
-        {"request": request, "data": df[:101],"tohtml": df.to_html()}
-        )
-
+        {"request": request, "data": df[:101], "tohtml": df.to_html(index=False)},
+    )
 
 
 @app.get("/api", status_code=200)
@@ -52,4 +56,3 @@ def get_API() -> dict:
     Api GET
     """
     return {"data": df[:101]}
-    

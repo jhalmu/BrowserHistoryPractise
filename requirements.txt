@@ -1,4 +1,59 @@
-browser-history
-pandas
-uvicorn
-fastapi
+anyio==3.6.2
+Brotli @ file:///Users/runner/miniforge3/conda-bld/brotli-split_1666788519867/work
+browser-history==0.3.2
+certifi==2022.12.7
+charset-normalizer==2.1.1
+click @ file:///home/conda/feedstock_root/build_artifacts/click_1666798198223/work
+cycler @ file:///home/conda/feedstock_root/build_artifacts/cycler_1635519461629/work
+dash @ file:///home/conda/feedstock_root/build_artifacts/dash_1670895711352/work
+dash-core-components==2.0.0
+dash-html-components==2.0.0
+dash-table==5.0.0
+fastapi==0.88.0
+flake8==6.0.0
+Flask @ file:///home/conda/feedstock_root/build_artifacts/flask_1660054669620/work
+Flask-Compress @ file:///home/conda/feedstock_root/build_artifacts/flask-compress_1663772969809/work
+fonttools @ file:///Users/runner/miniforge3/conda-bld/fonttools_1666827370036/work
+h11==0.14.0
+httptools==0.5.0
+idna==3.4
+importlib-metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_1671416996338/work
+itsdangerous==2.1.2
+Jinja2==3.1.2
+kiwisolver @ file:///Users/runner/miniforge3/conda-bld/kiwisolver_1666805765141/work
+MarkupSafe @ file:///Users/runner/miniforge3/conda-bld/markupsafe_1666770346139/work
+matplotlib @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_5fi9l6u9e6/croots/recipe/matplotlib-suite_1660167931049/work
+mccabe==0.7.0
+munkres==1.1.4
+numpy @ file:///Users/runner/miniforge3/conda-bld/numpy_1671485250162/work
+oauthlib==3.2.2
+packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1670530880680/work
+pandas==1.5.2
+pause==0.3
+Pillow==9.3.0
+plotly @ file:///home/conda/feedstock_root/build_artifacts/plotly_1670247090910/work
+pycodestyle==2.10.0
+pydantic==1.10.2
+pyflakes==3.0.1
+pyparsing @ file:///home/conda/feedstock_root/build_artifacts/pyparsing_1652235407899/work
+python-dateutil==2.8.2
+python-dotenv==0.21.0
+pytz==2022.7
+PyYAML==6.0
+requests==2.28.1
+requests-oauthlib==1.3.1
+six==1.16.0
+sniffio==1.3.0
+starlette==0.22.0
+tenacity @ file:///home/conda/feedstock_root/build_artifacts/tenacity_1663807083684/work
+tornado @ file:///Users/runner/miniforge3/conda-bld/tornado_1666788685513/work
+tweepy==4.12.1
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1665144421445/work
+unicodedata2 @ file:///Users/runner/miniforge3/conda-bld/unicodedata2_1667239979860/work
+urllib3==1.26.13
+uvicorn==0.20.0
+uvloop==0.17.0
+watchfiles==0.18.1
+websockets==10.4
+Werkzeug @ file:///home/conda/feedstock_root/build_artifacts/werkzeug_1660053523487/work
+zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1669453021653/work
