@@ -55,4 +55,6 @@ GOAL: Visualise your browser data as you browse. Add categories for domains so y
 - dash w/ extras  
 
 24.12.2022
+
 - Updated packages
+  
